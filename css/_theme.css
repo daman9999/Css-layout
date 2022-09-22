@@ -1,0 +1,25 @@
+/* ================================
+    @author: Damanpreet Singh
+ ================================*/
+
+:root{
+    --primary-color:brown;
+    --secondary-color:lightblue;
+    --contact-nav-background-color:maroon; 
+    --contact-nav-icon-clr:lightgrey;
+    --contact-nav-txt-clr:white;
+    --hover-color:lightgray;
+    --navbar-side-clr:hsl(0 0% 100%);
+    --nav-line-clr:red;
+    --nav-menu-hover-clr: blue;
+    --nav-menu-hover-txt-clr:red;
+    --nav-cross-hover-clr:pink;
+    --hamburger-and-cross-color:red;
+    --hero-btn-clr:purple;
+    --hero-btn-txt-clr:white;
+}
+/* navbar bars theme */
+.hamburger .bar,.hamburger::after,.hamburger::before {
+    content: "";
+    background-color: var(--hamburger-and-cross-color);
+}

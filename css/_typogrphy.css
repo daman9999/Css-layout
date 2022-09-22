@@ -1,0 +1,92 @@
+/* 
+    all the typography stuff for alignment,font-family,
+    font-size,font-weight,letter-spacing,word spacing
+*/
+
+:root{
+    /* font sizes */
+    --fz-xs:0.75em;
+    --fz-sm:0.845em;
+    --fz-md:1em;
+    --fz-lg:1.3em;
+    
+    /* letter spacing */
+    --ltr-sm-spacing:1px;
+    --ltr-md-spacing:2px;
+    --ltr-lg-spacing:4px;
+
+    /* font-weights */
+    --fw-300:300;
+    --fw-400:400;
+    --fw-500:500;
+    --fw-600:600;
+    --fw-700:700;
+    --fw-900:900;
+
+    /* font styles */
+    --font-heading:'Merriweather', serif;
+    /* "Merriweather","Times New Roman",Times,serif; */
+    --font-paragraph:"Open Sans",Helvetica,Arial,sans-serif;;
+
+}
+
+
+/* --------------- */
+/* Utility Classes */
+/* --------------- */
+
+.heading{
+    margin: 0;
+    padding: 0;
+    font-size: var(--fz-lg);
+    font-family: var(--font-heading);
+    font-weight: var(--fw-900);
+    /* margin-bottom: 1.2rem; */
+}
+
+.paragraph{
+    font-size: var(--fz-md);
+    font-family: var(--font-paragraph);
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+
+.letter-spacing-1{
+    letter-spacing: var(--ltr-sm-spacing);
+}
+
+.letter-spacing-2{
+    letter-spacing: var(--ltr-md-spacing);
+}
+
+.letter-spacing-3{
+    letter-spacing: var(--ltr-lg-spacing);
+}
+
+.word-spacing-1{
+    word-spacing: .33em;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* --------------- */
+/* Generic Classes */
+/* --------------- */
+
+.nav-text{
+    font-size: var(--fz-lg);
+    font-weight: var(--fw-900);
+}
+
+

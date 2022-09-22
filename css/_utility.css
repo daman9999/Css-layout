@@ -1,0 +1,75 @@
+/* ================================
+    includes all the utility class regarding layout
+
+    @author: Damanpreet Singh
+    
+ ================================*/
+
+/* --------------- */
+/* Utility Classes */
+/* --------------- */
+
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+
+.spacing-equal
+{
+display: block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+}
+
+
+.gap{
+    --gap:3em;
+    gap:(--gap);
+}
+
+.container {
+    --container-width: 200ch;
+    --container-gutter: 10rem;
+    --container-padding: 1rem;
+
+    width: min(var(--container-width), 100% - var(--container-gutter));
+    margin-inline: auto;
+    padding-block: var(--container-padding);
+}
+.flex {
+    display: flex;
+    gap: var(--gap, 1em);
+}
+
+.align-self-start{
+    align-self: start;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.row--gap{
+    gap:40px;
+}
+
+.row{
+    display: flex;
+}
+.padding-mobile-center{
+    padding:3rem 1.5rem;
+}
+.col{
+    flex-direction: column;
+}

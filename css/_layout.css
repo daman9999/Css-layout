@@ -1,0 +1,252 @@
+/* ================================
+    all  generic classes required to 
+    build layout
+    @author: Damanpreet Singh
+ ================================*/
+
+/* --------------- */
+/* Generic Classes */
+/* --------------- */
+.school__image{
+    --br:10px;
+
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 2rem auto;
+    border-radius: var(--br);
+}
+.about-us-container {
+    display: block;
+}
+/* .hero__text{
+    width: 65%;
+} */
+.contact {
+    display: none;
+}
+
+.shadowWrapper {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    z-index: 99999;
+}
+
+.hero__col{
+    align-self:flex-end;
+}
+
+/* --------------- */
+/* navbar Classes */
+/* --------------- */
+.logo-navbar {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.primary-header {
+    justify-content: space-between;
+    --gap: .75rem;
+
+}
+
+.primary-navigation {
+    flex-direction: column;
+    --gap: 0;
+    margin: 0;
+    position: fixed;
+    padding: min(30vh, 5rem) 3em;
+    inset: 0 0 0 50%;
+    background-color: var(--navbar-side-clr);
+    box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.7),
+        -5px 0 5px -5px rgba(0, 0, 0, 0.7);
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+}
+
+.primary-navigation[data-visible="true"] {
+    transform: translateX(0%);
+    transition: transform 350ms ease-in;
+}
+
+
+.hamburger {
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    cursor: pointer;
+    --gap: 0;
+    flex-direction: column;
+    width: 2rem;
+    height: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9999;
+
+    border: none;
+    user-select: none;
+    appearance: none;
+    background: none;
+    outline: none;
+
+}
+
+
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before {
+    content: "";
+    cursor: pointer;
+    display: inline-block;
+    width: 2rem;
+    height: .01rem;
+}
+
+.hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-0.5rem, 0.31rem);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.hamburger.is-active::after {
+    transform: rotate(45deg) translate(-0.5rem, -0.4375rem);
+}
+
+.nav-link {
+    padding: .55em .75em;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+    background-color: var(--hover-color);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav-contact {
+    display: none;
+}
+
+
+/* ----------------- */
+/* hero section     */
+/* ----------------- */
+.hero__btn{
+    --fw:var(--fw-900);
+
+    display: inline-block;
+    width: 80%;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:var(--hero-btn-txt-clr);
+    text-align: center;
+    font-weight: var(--fw);
+    background-color: var(--hero-btn-clr);
+    padding: .75em 2em;
+    border-radius: 100px;
+}
+
+
+.hero__btn:where(:hover,:focus){
+    opacity: .85;
+}
+
+
+.hero__img{
+    display: none;
+}
+
+.hero__text{
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* ----------------------- */
+/* For bigger screen sizes */
+/* -----------------------*/
+
+
+/* min-width tk kuch nahi hoga uske baad effect padega */
+@media (min-width: 67.75em) {
+    .logo-navbar {
+        display: none;
+    }
+
+    .primary-header {
+        align-items: center;
+    }
+
+    .primary-navigation {
+        all: unset;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-link {
+        margin-right: 2rem;
+    }
+
+    .mobile-nav-toggle {
+        display: none;
+    }
+
+    .heading {
+        font-size: 9px;
+        font-weight: var();
+    }
+
+    /* ----------------------- */
+    /* Nav top contact bar */
+    /* -----------------------*/
+
+    .nav-contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 2em 2em;
+        align-items: center;
+        background-color: var(--contact-nav-background-color);
+    }
+
+    .nav-contact>* a[href] {
+        font-size: var(--fz-md);
+        font-weight: var(--fw-500);
+        color: var(--contact-nav-txt-clr);
+        cursor: pointer;
+    }
+
+    .nav-flex {
+        display: flex;
+        align-items: center;
+        gap: .5rem
+    }
+    /* ====== */
+    /* hero btn */
+    /* ======= */
+    .hero__btn{
+        width:12%;
+    }
+    .hero__img{
+        display: block;
+    }
+
+    .row{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero__text{
+        width: 62%;
+        align-items: flex-start;
+    }
+
+}
+
+
+
+

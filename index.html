@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Gian deep Public Scool</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/navigation.js" defer></script>
+    <!-- links for icons and fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,600&family=Roboto:wght@400;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body >
+    <!-- div for contact -->
+    <div class="nav-contact flex container">
+        <div class="nav-contact-phone-number nav-flex">
+            <span class="material-symbols-outlined" style="color: var(--contact-nav-icon-clr);">call</span>
+            <div>
+                <a href="tel:01145082313">011-45082313,</a>
+                <a href="tel:01145092313">011-45082313</a>
+            </div>
+        </div>
+        <div class="nav-contact-location nav-flex ">
+            <span class="material-symbols-outlined" style="color: var(--contact-nav-icon-clr);">location_on</span>
+            <a target="_blank"
+                href="https://www.google.com/maps/place/Nav+Gian+Deep+Sr.+Sec.+Public+School/@28.6035077,77.0816656,17z/data=!4m5!3m4!1s0x390d1b4a3ed9264f:0xff8d2697bc4bbac8!8m2!3d28.603508!4d77.0816575">
+                Block A-1, 66, Vijay Enclave , Dabri Palam Road, New Delhi, Delhi 110045
+            </a>
+        </div>
+        <div class="nav-contact-email nav-flex">
+            <span class="material-symbols-outlined" style="color: var(--contact-nav-icon-clr);">drafts</span>
+            <div>
+                <a href="mailto:navgiandeepschool@rediffmail.com">navgiandeepschool@rediffmail.com</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- header -->
+    <div class="shadowWrapper">
+        <header class="primary-header container flex">
+            <!-- logo  -->
+            <div class="logo-container">
+                <img class="logo" src="/img/navgiandeeplogo.png" alt="Nav gian deep logo" width="60px" height="60px"
+                    aria-hidden="true">
+            </div>
+            <!-- navigation -->
+            <nav>
+                <!-- list -->
+                <ul class="primary-navigation is-active flex" id="primary-navigation" data-visible="false" role="list">
+                    <img class="logo-navbar" src="/img/navgiandeeplogo.png" alt="Nav gian deep logo" width="100px"
+                        height="100px" aria-hidden="true">
+                    <li class="nav-link nav-text capitalize heading letter-spacing-2"><a href="#">Home</a></li>
+                    <li class="nav-link nav-text capitalize heading letter-spacing-2"><a href="#">contact</a></li>
+                    <li class="nav-link nav-text capitalize heading letter-spacing-2"><a href="#">About us</a></li>
+                    <li class="nav-link nav-text capitalize heading letter-spacing-2"><a href="#">Follow</a></li>
+                    <li class="nav-link nav-text capitalize heading letter-spacing-2"><a href="#">Hred</a></li>
+                    <li class="nav-link nav-text capitalize heading letter-spacing-2"><a href="#">Hred</a></li>
+                </ul>
+            </nav>
+            <!-- mobile view hamburger button -->
+            <button class="mobile-nav-toggle hamburger flex" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only bar"></span>
+            </button>
+        </header>
+    </div>
+
+    
+    <!-- section hero -->
+    <section class="hero padding-mobile-center">
+        <div class="hero__container container row" >
+            <div class="hero__text col" style="padding:.75em;">
+                <h1 class="heading ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque iure odio maxime.</h1>
+                <p class="paragraph spacing-equal word-spacing-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rem cupiditate consectetur ab sed repellendus assumenda dolores illum obcaecati placeat repudiandae, commodi voluptatem accusamus debitis dolor itaque deleniti ut quidem. Doloremque, vitae.</p>
+                <a href="#" class="hero__btn spacing-equal" rel="noopener noreferrer" >Click me</a>
+            </div>
+            <div class="col">
+                <img src="/img/student.jfif" alt="student logo" class="hero__img">
+            </div>
+        </div>    
+    </section>
+    
+    <!-- body content -->
+    <div class="content-wrapper" style="background-color: lightgrey;" >
+    <main class="about-us  container padding-mobile-center" role="main" >
+        <!-- about the school -->
+        <article class="row about-us-container ">
+            <figure>
+                <img src="/img/school image.jfif" alt="school image" srcset="" class="school__image" aria-hidden="true">
+                <figcaption class="text-center">navgiandeeplogo</figcaption>
+            </figure>
+            <div class="col ">
+                <h1 class="heading spacing-equal" aria-readonly="true">
+                    About the School
+                </h1>
+                <p class="paragraph spacing-equal">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quis, voluptates iste tenetur aspernatur voluptatum amet eius saepe nihil id soluta rem aliquid asperiores. Odit impedit natus modi. Labore eligendi earum quasi.
+                </p>
+                <a href="#" rel="noopener noreferrer" class="spacing-equal hero__btn">Learn more</a>
+            </div>
+        </article>                
+    </main>
+</div>
+
+    
+
+    <footer>
+
+
+    </footer>
+</body>
+
+</html>
