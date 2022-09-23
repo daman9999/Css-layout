@@ -17,6 +17,8 @@
     --hamburger-and-cross-color:red;
     --hero-btn-clr:purple;
     --hero-btn-txt-clr:white;
+    --testimonial-quote-sign-color:hsl(0, 0%, 93%,0.3);
+    --testimonial-quote-color:white;
 }
 /* navbar bars theme */
 .hamburger .bar,.hamburger::after,.hamburger::before {

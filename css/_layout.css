@@ -7,7 +7,38 @@
 /* --------------- */
 /* Generic Classes */
 /* --------------- */
-.school__image,.school__cerification{
+
+
+.quote__body{
+    position: relative;
+    padding: 3rem .75rem;;
+}
+
+q{
+    all:unset;
+    color: var(--testimonial-quote-color);
+    font-style: italic ;
+}
+.quote__body::before{
+    content: "\e244";
+    position: absolute;
+    top:0;
+    left:0;
+    color: var(--testimonial-quote-sign-color);
+    font-size: 65px;
+    font-family: "Material Symbols Outlined";
+    rotate: 180deg;
+}
+.students_photo{
+    border-radius: 100%;
+    border: 5px solid white;
+}
+
+
+
+.school__image,
+.school__cerification{
+    /* images */
     --br:10px;
 
     width: 100%;
@@ -15,12 +46,17 @@
     margin: 0 auto 2rem auto;
     border-radius: var(--br);
 }
-.certificate__container,.about-us-container {
+
+
+.iso_certificate__container,
+.about-us-container {
+    /* container display */
     display: block;
 }
-/* .hero__text{
-    width: 65%;
-} */
+.testimonial__container{
+    flex-direction: column; 
+}
+
 .contact {
     display: none;
 }

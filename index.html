@@ -10,6 +10,9 @@
     <script src="js/navigation.js" defer></script>
     <!-- links for icons and fonts -->
     <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,600&family=Roboto:wght@400;700;900&display=swap"
@@ -17,10 +20,10 @@
 </head>
 
 <body>
-    <!-- div for contact -->
+    <!-- div for contact 📱 -->
     <div class="nav-contact flex container" style="position:fixed">
         <div class="nav-contact-phone-number nav-flex">
-            <!-- both telephone added -->
+            <!-- both telephone added ☎️-->
             <span class="material-symbols-outlined" style="color: var(--contact-nav-icon-clr);">call</span>
             <div>
                 <a href="tel:01145082313">011-45082313,</a>
@@ -28,7 +31,7 @@
             </div>
         </div>
         <div class="nav-contact-location nav-flex ">
-            <!-- g-map integrated + open on click  -->
+            <!-- g-map integrated + open on click  📌-->
             <span class="material-symbols-outlined" style="color: var(--contact-nav-icon-clr);">location_on</span>
             <a target="_blank"
                 href="https://www.google.com/maps/place/Nav+Gian+Deep+Sr.+Sec.+Public+School/@28.6035077,77.0816656,17z/data=!4m5!3m4!1s0x390d1b4a3ed9264f:0xff8d2697bc4bbac8!8m2!3d28.603508!4d77.0816575">
@@ -36,7 +39,7 @@
             </a>
         </div>
         <div class="nav-contact-email nav-flex">
-            <!-- added mail for mailing system -->
+            <!-- added mail for mailing system 📧-->
             <span class="material-symbols-outlined" style="color: var(--contact-nav-icon-clr);">drafts</span>
             <div>
                 <a href="mailto:navgiandeepschool@rediffmail.com">navgiandeepschool@rediffmail.com</a>
@@ -45,9 +48,9 @@
 
     </div>
 
-    <!-- header -->
-    <div class="shadowWrapper" >
-        <header class="primary-header container flex" >
+    <!-- header 🤯-->
+    <div class="shadowWrapper">
+        <header class="primary-header container flex">
             <!-- logo  -->
             <div class="logo-container">
                 <img class="logo" src="/img/navgiandeeplogo.png" alt="Nav gian deep logo" width="60px" height="60px"
@@ -75,7 +78,7 @@
     </div>
 
 
-    <!-- section hero -->
+    <!-- section hero 🦸-->
     <section class="hero padding-mobile-center">
         <div class="hero__container container row">
             <div class="hero__text col" style="padding:.75em;">
@@ -94,10 +97,10 @@
         </div>
     </section>
 
-    <!--🙇‍♂️  body content 🙇‍♂️  -->
+    <!--  💀 body content   💀-->
     <main>
         <!-- About the school 🏫 -->
-        <section class="content-wrapper" style="background-color: lightgrey;">
+        <section class="content-wrapper" style="background-color: var(--secondary-color);">
             <div class="about-us  container padding-mobile-center" role="section">
                 <article class="row about-us-container ">
                     <!-- school image 🖼  -->
@@ -123,22 +126,46 @@
                 </article>
             </div>
         </section>
-        
-        
-        <!-- 🌺  Certificate of Acknowledgement 🌺  -->
-        <section>
-            <div class="certificate__container container padding-mobile-center row">
 
-                        <img src="/img/iso-certification.gif" alt="certification of school" class="school__cerification" aria-hidden="true">
-                        <div class="col">
-                            <h1 class="heading spacing-equal">
-                                Certificate Issued to us for Quality study
-                            </h1>
-                            <p class="paragraph spacing-equal">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quo provident eum explicabo voluptatem vero consequatur, est molestias minus minima atque temporibus quisquam consectetur.
-                            </p>
-                        </div>   
-            </div>        
+
+        <!-- 🌺  Certificate of Acknowledgement 🌺  -->
+        <section id="iso_certificate">
+            <div class="iso_certificate__container container padding-mobile-center row">
+                <img src="/img/iso-certification.gif" alt="certification of school" class="school__cerification"
+                    aria-hidden="true">
+                <div class="col">
+                    <h1 class="heading spacing-equal">
+                        Certificate Issued to us for Quality study
+                    </h1>
+                    <p class="paragraph spacing-equal">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quo provident eum explicabo
+                        voluptatem vero consequatur, est molestias minus minima atque temporibus quisquam consectetur.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- testimonials 📔-->
+        <section class="testmonials testimonial_wrapper" style="background-color: var(--secondary-color);">
+            <!-- student 1 🧑‍🎓-->
+            <div
+                class="testimonial__container container padding-mobile-center row justify-content-center align-items-center">
+                <div class="col ">
+                    <img src="/img/boyphoto.jpg" alt="students_photo" class="students_photo">
+                </div>
+                <div class="col  quote__body">
+                    <q class="heading">
+                        The quality of facilities and faculty in Navdeep is excellent and has provided timely and prompt
+                        support in my academics that helped me to secure 5th Rank in All India CBSE Class X Exams.
+                        I have become proficient in many things as a student and assimilated lots of wisdom and
+                        experience through the guidance of the management, teaching & supporting staff. Throughout my
+                        academic progress in Navdeep, I have clearly comprehended that education is not just about
+                        getting good grades, as the Navdeepean motto says, "Education is For Life". Thank you all my
+                        friends,
+                        teachers & management for all the support and help offered to me over the years.
+                    </q>
+                </div>
+            </div>
         </section>
 
     </main>
@@ -146,7 +173,7 @@
     <!-- 
     ****** TO - DO ********
     * adding certificate ✔ 
-    * adding a testimonial maybe a corusel
+    * adding a testimonial maybe a corusel ✔ 
     * Enquiry form
     *activities in school 
     *map

@@ -31,6 +31,9 @@ dd
   padding: 0;
 }
 
+q{
+  display: inline;
+}
 /* a remove styling */
 a{
   all: unset;
