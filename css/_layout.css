@@ -7,7 +7,7 @@
 /* --------------- */
 /* Generic Classes */
 /* --------------- */
-.school__image{
+.school__image,.school__cerification{
     --br:10px;
 
     width: 100%;
@@ -15,7 +15,7 @@
     margin: 0 auto 2rem auto;
     border-radius: var(--br);
 }
-.about-us-container {
+.certificate__container,.about-us-container {
     display: block;
 }
 /* .hero__text{

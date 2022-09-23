@@ -16,10 +16,11 @@
         rel="stylesheet">
 </head>
 
-<body >
+<body>
     <!-- div for contact -->
-    <div class="nav-contact flex container">
+    <div class="nav-contact flex container" style="position:fixed">
         <div class="nav-contact-phone-number nav-flex">
+            <!-- both telephone added -->
             <span class="material-symbols-outlined" style="color: var(--contact-nav-icon-clr);">call</span>
             <div>
                 <a href="tel:01145082313">011-45082313,</a>
@@ -27,6 +28,7 @@
             </div>
         </div>
         <div class="nav-contact-location nav-flex ">
+            <!-- g-map integrated + open on click  -->
             <span class="material-symbols-outlined" style="color: var(--contact-nav-icon-clr);">location_on</span>
             <a target="_blank"
                 href="https://www.google.com/maps/place/Nav+Gian+Deep+Sr.+Sec.+Public+School/@28.6035077,77.0816656,17z/data=!4m5!3m4!1s0x390d1b4a3ed9264f:0xff8d2697bc4bbac8!8m2!3d28.603508!4d77.0816575">
@@ -34,6 +36,7 @@
             </a>
         </div>
         <div class="nav-contact-email nav-flex">
+            <!-- added mail for mailing system -->
             <span class="material-symbols-outlined" style="color: var(--contact-nav-icon-clr);">drafts</span>
             <div>
                 <a href="mailto:navgiandeepschool@rediffmail.com">navgiandeepschool@rediffmail.com</a>
@@ -43,8 +46,8 @@
     </div>
 
     <!-- header -->
-    <div class="shadowWrapper">
-        <header class="primary-header container flex">
+    <div class="shadowWrapper" >
+        <header class="primary-header container flex" >
             <!-- logo  -->
             <div class="logo-container">
                 <img class="logo" src="/img/navgiandeeplogo.png" alt="Nav gian deep logo" width="60px" height="60px"
@@ -52,7 +55,7 @@
             </div>
             <!-- navigation -->
             <nav>
-                <!-- list -->
+                <!-- list of links-->
                 <ul class="primary-navigation is-active flex" id="primary-navigation" data-visible="false" role="list">
                     <img class="logo-navbar" src="/img/navgiandeeplogo.png" alt="Nav gian deep logo" width="100px"
                         height="100px" aria-hidden="true">
@@ -71,44 +74,87 @@
         </header>
     </div>
 
-    
+
     <!-- section hero -->
     <section class="hero padding-mobile-center">
-        <div class="hero__container container row" >
+        <div class="hero__container container row">
             <div class="hero__text col" style="padding:.75em;">
-                <h1 class="heading ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque iure odio maxime.</h1>
-                <p class="paragraph spacing-equal word-spacing-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rem cupiditate consectetur ab sed repellendus assumenda dolores illum obcaecati placeat repudiandae, commodi voluptatem accusamus debitis dolor itaque deleniti ut quidem. Doloremque, vitae.</p>
-                <a href="#" class="hero__btn spacing-equal" rel="noopener noreferrer" >Click me</a>
+                <h1 class="heading ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque iure odio maxime.
+                </h1>
+                <p class="paragraph spacing-equal word-spacing-1">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Error rem cupiditate consectetur ab sed repellendus assumenda dolores illum obcaecati placeat
+                    repudiandae, commodi voluptatem accusamus debitis dolor itaque deleniti ut quidem. Doloremque,
+                    vitae.</p>
+                <a href="#" class="hero__btn spacing-equal" rel="noopener noreferrer" aria-label="Write a Enquiry">Click
+                    me</a>
             </div>
             <div class="col">
                 <img src="/img/student.jfif" alt="student logo" class="hero__img">
             </div>
-        </div>    
+        </div>
     </section>
-    
-    <!-- body content -->
-    <div class="content-wrapper" style="background-color: lightgrey;" >
-    <main class="about-us  container padding-mobile-center" role="main" >
-        <!-- about the school -->
-        <article class="row about-us-container ">
-            <figure>
-                <img src="/img/school image.jfif" alt="school image" srcset="" class="school__image" aria-hidden="true">
-                <figcaption class="text-center">navgiandeeplogo</figcaption>
-            </figure>
-            <div class="col ">
-                <h1 class="heading spacing-equal" aria-readonly="true">
-                    About the School
-                </h1>
-                <p class="paragraph spacing-equal">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quis, voluptates iste tenetur aspernatur voluptatum amet eius saepe nihil id soluta rem aliquid asperiores. Odit impedit natus modi. Labore eligendi earum quasi.
-                </p>
-                <a href="#" rel="noopener noreferrer" class="spacing-equal hero__btn">Learn more</a>
-            </div>
-        </article>                
-    </main>
-</div>
 
-    
+    <!--🙇‍♂️  body content 🙇‍♂️  -->
+    <main>
+        <!-- About the school 🏫 -->
+        <section class="content-wrapper" style="background-color: lightgrey;">
+            <div class="about-us  container padding-mobile-center" role="section">
+                <article class="row about-us-container ">
+                    <!-- school image 🖼  -->
+                    <figure>
+                        <img src="/img/school image.jfif" alt="school image" srcset="" class="school__image"
+                            aria-hidden="true">
+                        <figcaption aria-hidden="false" style="display: none;">Nav gian deep school photo</figcaption>
+                    </figure>
+                    <div class="col">
+                        <!-- about the school heading -->
+                        <h1 class="heading spacing-equal" aria-readonly="true">
+                            About the School
+                        </h1>
+                        <!-- about the school -->
+                        <p class="paragraph spacing-equal">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quis, voluptates iste tenetur
+                            aspernatur voluptatum amet eius saepe nihil id soluta rem aliquid asperiores. Odit impedit
+                            natus modi. Labore eligendi earum quasi.
+                        </p>
+                        <a href="#" rel="noopener noreferrer" class="spacing-equal hero__btn"
+                            aria-label="Learn more about the school">Learn more</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        
+        <!-- 🌺  Certificate of Acknowledgement 🌺  -->
+        <section>
+            <div class="certificate__container container padding-mobile-center row">
+
+                        <img src="/img/iso-certification.gif" alt="certification of school" class="school__cerification" aria-hidden="true">
+                        <div class="col">
+                            <h1 class="heading spacing-equal">
+                                Certificate Issued to us for Quality study
+                            </h1>
+                            <p class="paragraph spacing-equal">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quo provident eum explicabo voluptatem vero consequatur, est molestias minus minima atque temporibus quisquam consectetur.
+                            </p>
+                        </div>   
+            </div>        
+        </section>
+
+    </main>
+
+    <!-- 
+    ****** TO - DO ********
+    * adding certificate ✔ 
+    * adding a testimonial maybe a corusel
+    * Enquiry form
+    *activities in school 
+    *map
+    *school footer with rights reserved 
+ -->
+
+
+
 
     <footer>
 
