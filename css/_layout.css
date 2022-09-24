@@ -11,7 +11,8 @@
 
 .quote__body{
     position: relative;
-    padding: 3rem .75rem;;
+    /* trbl */
+    padding:3rem 0 3rem 1.5rem;
 }
 
 q{

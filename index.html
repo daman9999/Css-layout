@@ -21,7 +21,7 @@
 
 <body>
     <!-- div for contact 📱 -->
-    <div class="nav-contact flex container" style="position:fixed">
+    <div class="nav-contact flex container" style="position:fixed;z-index: 100000;">
         <div class="nav-contact-phone-number nav-flex">
             <!-- both telephone added ☎️-->
             <span class="material-symbols-outlined" style="color: var(--contact-nav-icon-clr);">call</span>
@@ -127,7 +127,6 @@
             </div>
         </section>
 
-
         <!-- 🌺  Certificate of Acknowledgement 🌺  -->
         <section id="iso_certificate">
             <div class="iso_certificate__container container padding-mobile-center row">
@@ -144,6 +143,10 @@
                 </div>
             </div>
         </section>
+
+
+
+
 
         <!-- testimonials 📔-->
         <section class="testmonials testimonial_wrapper" style="background-color: var(--secondary-color);">
@@ -168,13 +171,40 @@
             </div>
         </section>
 
+        <!-- inquiry from ❓-->
+        <form class=" container padding-mobile-center row justify-content-center align-items-center ">
+            <div class="col " style="flex-basis: 100%;">
+                <div class="form-group ">
+                    <label for="form-Name">Name</label>
+                    <input type="text" name="name" id="form-Name" data-form-field="Name" placeholder="Eg:john">
+                </div>
+                <div class="form-group">
+                    <label for="form-email">Email</label>
+                    <input type="text" name="email" id="form-email" required data-form-field="email"
+                        placeholder="Eg:john@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="form-Phone">Phone</label>
+                    <input type="tel" name="Phone" data-form-field="Phone" id="form-Phone"
+                        placeholder="Eg:+91 123467890">
+                </div>
+
+                <div class="form-group">
+                    <label for="form-message">Message</label>
+                    <textarea type="text" rows="10" data-form-field="message" name="Phone" id="form-message"
+                        placeholder="I want more information about admission process"></textarea>
+                </div>
+            </div>
+        </form>
+
+
     </main>
 
     <!-- 
     ****** TO - DO ********
     * adding certificate ✔ 
     * adding a testimonial maybe a corusel ✔ 
-    * Enquiry form
+    * Enquiry form  ✔ 
     *activities in school 
     *map
     *school footer with rights reserved 

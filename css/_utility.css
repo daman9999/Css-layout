@@ -72,4 +72,11 @@ margin-inline-end: 0px;
 }
 .col{
     flex-direction: column;
+    
+}
+
+
+.form-group,label{
+    padding: .45em 0;
+    display: block;
 }

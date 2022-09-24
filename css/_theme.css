@@ -19,6 +19,8 @@
     --hero-btn-txt-clr:white;
     --testimonial-quote-sign-color:hsl(0, 0%, 93%,0.3);
     --testimonial-quote-color:white;
+    --enquiry-field-inputboxes:lightgray;
+    --enquiry-field-inputboxes-text:blue
 }
 /* navbar bars theme */
 .hamburger .bar,.hamburger::after,.hamburger::before {
